@@ -1,0 +1,22 @@
+package hu.szalaimihaly.springinit.config;
+
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties("springinit")
+public class SpringinitProperties {
+
+
+    /**
+     * This is our welcome message
+     */
+    private String welcomeMsg = "Hello World";
+
+    public String getWelcomeMsg() {
+        return welcomeMsg;
+    }
+
+    public void setWelcomeMsg(String welcomeMsg) {
+        this.welcomeMsg = welcomeMsg;
+    }
+}
